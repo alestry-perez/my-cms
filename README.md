@@ -1,4 +1,4 @@
-# wigglyprocess CMS
+# WigglyProcess CMS
 
 ## A HyperIsland Student Project 
 
