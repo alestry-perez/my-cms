@@ -62,6 +62,10 @@ class Api
             $counterApi->setup($group);
         });
 
+        $app->group('/api/news', function (Group $group) use ($counterApi) {
+            $counterApi->setup($group);
+        });
+
         return $app;
     }
 }
