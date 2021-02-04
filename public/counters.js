@@ -1,4 +1,6 @@
 // Please don't use JQuery for DOM manipulation and form submission IRL. Please use React/Vue/Angular instead!
+
+
 $(function () {
     let apiRoot = "/api/counters";
     function getCounterRowHtml(counter) {
