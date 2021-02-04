@@ -7,14 +7,16 @@ $(function () {
         <div class="col-sm">${counter.id}</div>
         <div class="col-sm">${counter.name}</div>
         <div class="col-sm">
-            <button class="btn btn-sm btn-primary increaseCounter" data-counter-id="${counter.id}" type="button">
-            ${counter.value}
-            </button>
+            <button class="btn btn-sm btn-primary decreaseCounter" data-counter-id="${counter.id}" type="button">-</button>
+            <h3 class="btn">${counter.value}</h3>
+            <button class="btn btn-sm btn-primary increaseCounter" data-counter-id="${counter.id}" type="button">+</button>
+            <button class="btn btn-primary">Delete</button>
         </div>
     </div>`;
     }
     function installCounterClickHandler() {
         $(".increaseCounter").off("click").click(counterClickHandler);
+        $(".decreaseCounter").off("click").click(counterClickHandler);
         function counterClickHandler(event) {
             event.target.setAttribute("disabled", "disabled");
             let counterId = event.target.getAttribute("data-counter-id");
